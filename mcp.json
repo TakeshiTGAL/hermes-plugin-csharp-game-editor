@@ -1,0 +1,40 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "csharp-game-editor": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "--isolated",
+        "--no-config",
+        "--no-env-file",
+        "--no-sources",
+        "--no-build",
+        "--index-strategy",
+        "first-index",
+        "--keyring-provider",
+        "disabled",
+        "--index",
+        "https://pypi.org/simple",
+        "--default-index",
+        "https://pypi.org/simple",
+        "--link-mode",
+        "copy",
+        "--exclude-newer",
+        "2026-10-05T00:00:00Z",
+        "--from",
+        "mcpforunityserver==10.3.0",
+        "python",
+        "-I",
+        "${PLUGIN_ROOT}/bridge/csharp_game_editor_bridge.py"
+      ],
+      "env": {
+        "DISABLE_TELEMETRY": "true",
+        "UNITY_MCP_DISABLE_TELEMETRY": "true",
+        "FASTMCP_CHECK_FOR_UPDATES": "off",
+        "UNITY_MCP_LOG_DIR": "${PLUGIN_DATA}/logs"
+      },
+      "cwd": "${PLUGIN_DATA}/work"
+    }
+  }
+}

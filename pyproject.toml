@@ -1,0 +1,9 @@
+[project]
+name = "csharp-game-editor"
+version = "0.6.0"
+description = "The bridge uses the Python standard library. uvx installs mcpforunityserver."
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.uv]
+package = false

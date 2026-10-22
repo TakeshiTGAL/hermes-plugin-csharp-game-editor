@@ -1,0 +1,349 @@
+{
+  "manage_animation": {
+    "assign": [
+      "target"
+    ],
+    "create_preset": [
+      "target"
+    ],
+    "crossfade": [
+      "target"
+    ],
+    "get_parameter": [
+      "target"
+    ],
+    "play": [
+      "target"
+    ],
+    "set_enabled": [
+      "target"
+    ],
+    "set_parameter": [
+      "target"
+    ],
+    "set_speed": [
+      "target"
+    ]
+  },
+  "manage_build": {},
+  "manage_camera": {},
+  "manage_graphics": {
+    "bake_create_light_probe_group": [
+      "grid_size",
+      "name",
+      "position",
+      "spacing"
+    ],
+    "bake_create_reflection_probe": [
+      "box_projection",
+      "hdr",
+      "mode",
+      "name",
+      "position",
+      "resolution",
+      "size"
+    ],
+    "bake_reflection_probe": [
+      "target"
+    ],
+    "bake_set_probe_positions": [
+      "positions",
+      "target"
+    ],
+    "bake_set_settings": [
+      "settings"
+    ],
+    "bake_start": [
+      "async_bake"
+    ],
+    "feature_add": [
+      "material",
+      "name",
+      "properties",
+      "feature_type"
+    ],
+    "feature_configure": [
+      "index",
+      "name",
+      "properties",
+      "settings"
+    ],
+    "feature_remove": [
+      "index",
+      "name"
+    ],
+    "feature_reorder": [
+      "order"
+    ],
+    "feature_toggle": [
+      "active",
+      "index",
+      "name"
+    ],
+    "pipeline_set_quality": [
+      "level"
+    ],
+    "pipeline_set_settings": [
+      "settings"
+    ],
+    "skybox_set_ambient": [
+      "ambient_mode",
+      "color",
+      "equator_color",
+      "ground_color",
+      "intensity",
+      "mode"
+    ],
+    "skybox_set_fog": [
+      "color",
+      "fog_color",
+      "fog_density",
+      "fog_enabled",
+      "fog_end",
+      "fog_mode",
+      "fog_start",
+      "mode"
+    ],
+    "skybox_set_material": [
+      "material",
+      "path"
+    ],
+    "skybox_set_properties": [
+      "parameters",
+      "properties"
+    ],
+    "skybox_set_reflection": [
+      "bounces",
+      "intensity",
+      "mode",
+      "path",
+      "reflection_mode",
+      "resolution"
+    ],
+    "skybox_set_sun": [
+      "name",
+      "target"
+    ],
+    "stats_set_scene_debug": [
+      "mode"
+    ],
+    "volume_add_effect": [
+      "effect"
+    ],
+    "volume_create": [
+      "effects",
+      "is_global",
+      "name",
+      "priority",
+      "profile_path",
+      "weight"
+    ],
+    "volume_create_profile": [
+      "path"
+    ],
+    "volume_remove_effect": [
+      "effect"
+    ],
+    "volume_set_effect": [
+      "effect",
+      "parameters"
+    ],
+    "volume_set_properties": [
+      "is_global",
+      "priority",
+      "properties",
+      "weight"
+    ]
+  },
+  "manage_material": {
+    "assign_material_to_renderer": [
+      "material_path",
+      "search_method",
+      "slot",
+      "target"
+    ],
+    "create": [
+      "color",
+      "material_path",
+      "properties",
+      "property",
+      "shader"
+    ],
+    "get_material_info": [
+      "material_path"
+    ],
+    "set_material_color": [
+      "color",
+      "material_path",
+      "property"
+    ],
+    "set_material_shader_property": [
+      "material_path",
+      "property",
+      "value"
+    ],
+    "set_renderer_color": [
+      "color",
+      "mode",
+      "search_method",
+      "slot"
+    ]
+  },
+  "manage_physics": {
+    "add_joint": [
+      "connected_body",
+      "dimension",
+      "properties",
+      "search_method",
+      "target"
+    ],
+    "apply_force": [
+      "dimension",
+      "explosion_force",
+      "explosion_position",
+      "explosion_radius",
+      "force",
+      "force_mode",
+      "force_type",
+      "position",
+      "search_method",
+      "target",
+      "torque",
+      "upwards_modifier"
+    ],
+    "assign_physics_material": [
+      "collider_type",
+      "component_index",
+      "material_path",
+      "search_method",
+      "target"
+    ],
+    "configure_joint": [
+      "component_index",
+      "drive",
+      "joint_type",
+      "limits",
+      "motor",
+      "properties",
+      "search_method",
+      "spring",
+      "target"
+    ],
+    "configure_physics_material": [
+      "dimension",
+      "properties"
+    ],
+    "configure_rigidbody": [
+      "dimension",
+      "properties",
+      "search_method",
+      "target"
+    ],
+    "create_physics_material": [
+      "bounce_combine",
+      "bounciness",
+      "dimension",
+      "dynamic_friction",
+      "friction_combine",
+      "name",
+      "path",
+      "static_friction"
+    ],
+    "get_collision_matrix": [
+      "dimension"
+    ],
+    "get_rigidbody": [
+      "dimension",
+      "search_method",
+      "target"
+    ],
+    "get_settings": [
+      "dimension"
+    ],
+    "linecast": [
+      "dimension",
+      "end",
+      "start"
+    ],
+    "overlap": [
+      "dimension",
+      "layer_mask",
+      "position",
+      "shape",
+      "size"
+    ],
+    "raycast": [
+      "dimension",
+      "direction",
+      "max_distance",
+      "origin"
+    ],
+    "raycast_all": [
+      "dimension",
+      "direction",
+      "max_distance",
+      "origin"
+    ],
+    "remove_joint": [
+      "component_index",
+      "joint_type",
+      "search_method",
+      "target"
+    ],
+    "set_collision_matrix": [
+      "collide",
+      "dimension",
+      "layer_a",
+      "layer_b"
+    ],
+    "set_settings": [
+      "dimension",
+      "settings"
+    ],
+    "shapecast": [
+      "dimension",
+      "direction",
+      "max_distance",
+      "origin",
+      "shape"
+    ],
+    "simulate_step": [
+      "dimension",
+      "search_method",
+      "step_size",
+      "steps",
+      "target"
+    ],
+    "validate": [
+      "cursor",
+      "dimension",
+      "page_size",
+      "search_method",
+      "target"
+    ]
+  },
+  "manage_prefabs": {},
+  "manage_probuilder": {},
+  "manage_profiler": {
+    "frame_debugger_get_events": [
+      "cursor",
+      "page_size"
+    ],
+    "memory_list_snapshots": [
+      "search_path"
+    ],
+    "profiler_set_areas": [
+      "areas"
+    ],
+    "profiler_start": [
+      "enable_callstacks",
+      "log_file"
+    ]
+  },
+  "manage_ui": {},
+  "manage_vfx": {
+    "create": [
+      "target"
+    ]
+  }
+}

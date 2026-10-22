@@ -1,0 +1,45 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "csharp-game-editor",
+  "version": "0.6.0",
+  "description": "Change the real project in your open Unity editor from Hermes after reading the plan and approving once, on MCP for Unity (CoplayDev/unity-mcp) 10.3.0. Disk reads of .unity, .prefab, .asset, and .cs text run at once. An editor read and every change come back as a plan from plan_batch and run with apply_plan after one Hermes approval; a plan that deletes, runs editor code, or saves over unsaved work asks once more. apply_plan copies what it touches and puts back a file the plan did not name. A .meta stays when its asset or folder was already on disk. A Unity .meta whose asset is already missing is named in the plan, and Unity's change to it is kept.",
+  "author": {
+    "name": "TakeshiTGAL",
+    "url": "https://github.com/TakeshiTGAL"
+  },
+  "homepage": "https://github.com/TakeshiTGAL/hermes-plugin-csharp-game-editor",
+  "repository": "https://github.com/TakeshiTGAL/hermes-plugin-csharp-game-editor",
+  "license": "MIT",
+  "keywords": [
+    "unity",
+    "game",
+    "game-engine",
+    "csharp",
+    "scene",
+    "editor",
+    "mcp"
+  ],
+  "extensions": {
+    "com.nousresearch.hermes": {
+      "servers": {
+        "csharp-game-editor": {
+          "trust": "untrusted",
+          "app": {
+            "darwin": {
+              "presence": "bundle",
+              "location": [
+                "/Applications/Unity/Hub/Editor/*/Unity.app"
+              ],
+              "version": {
+                "kind": "plist"
+              }
+            }
+          },
+          "requires": {
+            "app": false
+          }
+        }
+      }
+    }
+  }
+}
